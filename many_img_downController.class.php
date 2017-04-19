@@ -2,7 +2,7 @@
 namespace Mynote\Controller;
 use Think\Controller;
 
-//批量下载图片333
+//批量下载图片222
 class many_img_downController extends Controller
 {
     public function many_img_down(){
