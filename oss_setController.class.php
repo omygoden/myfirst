@@ -43,7 +43,7 @@ class oss_uploadController extends Controller
     /**
      * 删除图片
      * @param $object 图片地址
-     * @return string
+     * @return 
      */
     public function delossimg($object)
     {
