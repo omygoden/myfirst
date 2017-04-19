@@ -1,0 +1,16 @@
+(解决中文乱码)
+set encoding=utf-8  
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,chinese,cp936
+language messages zh_CN.utf-8
+
+
+colorscheme desert //设置默认主题
+set number //显示行数
+syntax on //语法高亮
+
+（取消保存之后的备份，写在最后面）
+set nobackup
+set nowritebackup
+set backupcopy=yes

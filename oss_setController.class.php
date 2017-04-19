@@ -41,7 +41,7 @@ class oss_uploadController extends Controller
     }
 
     /**
-     * 666
+     * 333
      * 删除图片
      * @param $object 图片地址
      */
