@@ -112,7 +112,7 @@ class Batch_downController extends Controller
         fclose($fp);
     }
 
-    //触发下载，直接调用
+    //触发下载，直接调用(直接url跳转到这个方法)
     public function batch_down(){
         $info=M(C('NCL_REG_GET'),'',C('NCL'));
         $rid=I('get.id');

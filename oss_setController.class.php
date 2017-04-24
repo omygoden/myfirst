@@ -10,7 +10,7 @@ class oss_uploadController extends Controller
     protected $oss_secret = '5NMNsAF0mT1xfU19e3gviuBI8YKQBP';
     protected $oss_url = 'http://ceshimain.oss-cn-hangzhou.aliyuncs.com'; //oss地址
 
-    //image=$_FILES
+    //image=$_FILES['img']
     public function addossimg($image, $type = false)
     {
         //引入OSS类文件

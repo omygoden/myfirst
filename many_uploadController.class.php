@@ -2,8 +2,8 @@
 namespace Mynote\Controller;
 use Think\Controller;
 
-//批量下载图片222
-class many_img_downController extends Controller
+//批量图片上传
+class many_uploadController extends Controller
 {
     public function many_img_down(){
         header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
