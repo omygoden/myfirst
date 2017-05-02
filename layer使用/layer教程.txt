@@ -1,0 +1,12 @@
+这种方法表示引入所有的js模块，这样layer里的所有模板都可以使用
+<script src="__PUBLIC__/admin/js/layui/lay/dest/layui.all.js"></script>
+
+这种方法只引入了layer里的提示框模块，其他比如时间模块则用不了，则需要另外引入，如果只需要使用提示框的话，使用这种方法是最佳的
+<script src="__PUBLIC__/admin/js/layer/layer.js"></script>
+
+这种方法则是分模块引入，需要什么模块就引入什么模块，这样引入的js则是比较轻巧的，基本不会花太多时间加载,
+如果需要样式，则需要另外引入css下的
+layui
+<script src="__PUBLIC__/admin/js/layui/layui.js"></script>
+<script src="__PUBLIC__/admin/js/layui/lay/modules/layer.js"></script>
+<script src="__PUBLIC__/admin/js/layui/lay/modules/laydate.js"></script>

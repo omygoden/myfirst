@@ -46,7 +46,7 @@ function uploadimg(){
 <script>
     //注意：id名如果和onchange函数名相同的话，将会报错。
     function upload(){
-        var tourl='__MODULE__/indexadm.php/Public/uploadimg';
+        var tourl='__MODULE__/Mypublic/uploadimg';
         $.ajaxFileUpload({
             url:tourl,//需要链接到服务器地址
             secureuri:false,

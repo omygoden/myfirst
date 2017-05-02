@@ -34,10 +34,11 @@ class oss_uploadController extends Controller
         if (getimagesize($image['tmp_name']) === false) {
             return '1004';
         }
-        //先建一个图片存放容器，lingsui为上传路径
-        $object = 'lingsui/' . $img_name;
+
         //临时文件，也可直接写服务器上某个路径下面的图片地址，比如./Public/test.jpg
         $filePath = $image['tmp_name'];
+        //先建一个图片存放容器，lingsui为上传路径
+        $object = 'lingsui/' . $img_name;
         try {
             //ceshimain为bucket，即存放文件的区域，必备，区域只能有一个，但区域下面可以建多个文件夹，比如上面的lingsui文件夹
             $success->uploadFile('ceshimain', $object, $filePath);
